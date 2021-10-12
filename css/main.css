@@ -1,0 +1,35 @@
+
+*{
+    font-family: Cochin;
+    margin-left: 20px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 40px;
+    font-family: Cochin;
+    font-weight: 900;
+    text-align:center;
+    background: antiquewhite;
+    text-decoration:overline;
+}
+
+.mylove {
+    border: 3px solid #666;
+    margin-top: 30px;
+
+    text-transform:uppercase;
+}
+#ulul{
+    color: cadetblue;
+    margin-bottom: 50px;
+}
+img{
+    height: 500px;
+    width: 500px;
+    filter: drop-shadow(0 0 40px rgba(100,0,0,0.8));
+}
+
+/*.p{*/
+/*   padding: 10px;*/
+/*}*/
