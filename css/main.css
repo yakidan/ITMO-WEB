@@ -1,7 +1,8 @@
 
-*{
+* {
     font-family: Cochin;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 p {
@@ -9,28 +10,92 @@ p {
     line-height: 40px;
     font-family: Cochin;
     font-weight: 900;
-    text-align:center;
+    text-align: center;
     background: antiquewhite;
-    text-decoration:overline;
+    text-decoration: overline;
 
 }
 
-.mylove {
-    border: 3px solid #666;
-    margin: 10px 340px 80px 50px;
-    text-transform:uppercase;
+
+@media screen {
+    .mylove {
+        border: 3px solid #666;
+        margin: 0px 340px 80px 50px;
+        width: auto;
+        text-transform: uppercase;
+    }
 }
-#ulul{
+
+#ulul {
     color: cadetblue;
     margin-bottom: 50px;
     word-spacing: 50px;
 }
-img{
+
+img {
     height: 500px;
     width: 500px;
-    filter: drop-shadow(0 0 40px rgba(100,0,0,0.8));
+    filter: drop-shadow(0 0 40px rgba(100, 0, 0, 0.8));
 }
 
+
+
+.flex-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.flex-table thead {
+    color: #fff;
+    background: rgba(100, 0, 0, 0.8);
+}
+.flex-table thead tr,
+.flex-table tbody tr {
+    display: flex;
+}
+.flex-table thead tr,
+.flex-table tbody tr {
+    display: flex;
+}
+
+.flex-table tbody tr+tr {
+    border-top: 1px solid #ccc;
+}
+.flex-table thead tr th,
+.flex-table tbody tr td {
+    display: flex;
+    flex: 1;
+    padding: .5em;
+}
+@media screen and (max-width: 640px) {
+    .flex-table {
+        border: 0;
+    }
+    .flex-table thead {
+        display: none;
+    }
+    .flex-table tbody tr {
+        flex-direction: column;
+        margin: 1em;
+        border: 1px solid #ccc;
+    }
+    .flex-table tbody tr td {
+        flex-direction: column;
+    }
+    .flex-table tbody tr td+td {
+        border-top: 1px solid #ccc;
+    }
+    .flex-table tbody tr td:before {
+        display: flex;
+        align-items: center;
+        content: attr(data-label);
+        margin: -.5em -.5em .75em -.5em;
+        padding: .5em;
+        color: #fff;
+        background: rgba(100, 0, 0, 0.8);
+    }
+}
 /*.p{*/
 /*   padding: 10px;*/
 /*}*/
