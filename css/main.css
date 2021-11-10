@@ -68,7 +68,7 @@ img {
     flex: 1;
     padding: .5em;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 840px) {
     .flex-table {
         border: 0;
     }
