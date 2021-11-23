@@ -5,11 +5,21 @@
     <title>WEB - one love!</title>
     <meta name="keywords" content="Якимов Даниил">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/load.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/change_items.js"></script>
 </head>
 <body>
-<header>
-    <nav>Навигация по страницам</nav>
+<header class="main">
+    <nav>
+        <ul>
+            <li class="main active"><a href="index.html" >Главная</a></li>
+            <li class="experience active"><a href="page/experience.html" >Опыт</a></li>
+            <li class="course active"><a href="page/course.html">Курсы</a></li>
+        </ul>
+    </nav>
     <h1>Якимов Даниил</h1>
+    <h3 id="load">Время загрузки</h3>
 </header>
 
 <main>
@@ -95,6 +105,13 @@
         <td data-label="Number">+79996660011</td>
         <td data-label="City">Иркутск</td>
         <td data-label="University">ИГУ</td>
+    </tr>
+    <tr>
+        <td data-label="Name">Федор</td>
+        <td data-label="Surname">Викентов</td>
+        <td data-label="Number">+73330009812</td>
+        <td data-label="City">Махачакала</td>
+        <td data-label="University">МГУ</td>
     </tr>
     </tbody>
 </table>

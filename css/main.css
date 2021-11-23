@@ -26,6 +26,23 @@ p {
     }
 }
 
+a:link{
+    text-decoration: none;
+}
+nav ul li a{
+    color: black;
+}
+nav ul li{
+    width: 15%;
+    margin-bottom: 2px;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.active{
+    background: aquamarine;
+}
 #ulul {
     color: cadetblue;
     margin-bottom: 50px;
